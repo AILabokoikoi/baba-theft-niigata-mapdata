@@ -48,7 +48,7 @@ ODbL 1.0 の決まり（派生データベースを提供すること）に従�
 | `METHOD.md` | 作り方 |
 | `SHA256SUMS.txt` | 全ファイルのハッシュ |
 
-`data/` のファイルは、ゲームが配っているものとバイト単位で同じです（`index.json` の `attribution` に書き入れ前の〈…〉が残っていますが、正しい表記はこの README と LICENSE のとおりです）。
+`data/` のファイルは、ゲームが配っているものとバイト単位で同じです。
 
 ---
 
@@ -77,7 +77,7 @@ It is published to meet the ODbL 1.0 requirement to offer the derivative databas
 MLIT, Niigata City, GSI and the OpenStreetMap Foundation did not create, review or endorse this database or the game.
 
 ### Files
-See the table above. The binary layout is documented in [FORMAT.md](FORMAT.md) and the processing in [METHOD.md](METHOD.md). The files in `data/` are byte-identical to the ones shipped with the game (the `attribution` strings inside `index.json` still contain unfilled 〈…〉 placeholders; the correct attribution is the one in this README and LICENSE).
+See the table above. The binary layout is documented in [FORMAT.md](FORMAT.md) and the processing in [METHOD.md](METHOD.md). The files in `data/` are byte-identical to the ones shipped with the game.
 
 ### Reading it
 gzip + little-endian structs; e.g. in Python `gzip.decompress` and `struct.unpack_from('<…')` with the layouts in FORMAT.md.
